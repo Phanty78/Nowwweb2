@@ -1,0 +1,4 @@
+slider page article : pas de pagination / pas de boucle si dernière ou première image
+amélioration html sémantique
+amélioration performance (lighthouse)
+suppresion des !important dans le code CSS > PLus maintenable
