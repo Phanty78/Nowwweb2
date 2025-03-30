@@ -7,7 +7,7 @@ export default function DesktopNav() {
   return (
     <nav className="flex flex-col xl:flex-row justify-between items-center my-7 " aria-label="Navigation principale">
       <Link href={routes.home} aria-label="Navigation vers la page d'accueil" className="hidden xl:block">
-        <Image src="/images/logo.svg" alt="logo de l'agence Nowwweb" width={150} height={27} />
+        <Image src="/images/logo.svg" alt="logo de l'agence Nowwweb" width={150} height={27} priority/>
       </Link>
       <ul className="flex flex-col xl:flex-row  justify-between items-center gap-10 " aria-label="Liste des liens de navigation">
         <li className="font-montserrat lg:font-semibold text-xl lg:text-base text-white font-bold   lg:text-nav-grey lg:active:text-black lg:hover:text-black" aria-label="Lien vers la page des expertises">

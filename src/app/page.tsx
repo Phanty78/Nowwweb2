@@ -41,15 +41,19 @@ export default function Home() {
     }, []);
 
     return (
-        <main className="flex w-full flex-col items-center justify-center  ">
+        <main className="flex w-full flex-col items-center justify-center" role="main" aria-label="Contenu principal">
             {/* section Hero */}
-            <section className="bg-dark-blue w-full h-[calc(100vh-110px)] lg:h-[calc(100vh-100px)] flex items-center justify-center relative overflow-hidden">
+            <section 
+                className="bg-dark-blue w-full h-[calc(100vh-110px)] lg:h-[calc(100vh-100px)] flex items-center justify-center relative overflow-hidden"
+                aria-label="Section d'accueil - Présentation de l'agence"
+            >
                 <Image 
                     src="/images/motif1.svg" 
                     alt="Motif 1" 
                     width={388}
                     height={250}
                     className="absolute top-0 right-0"
+                    priority
                 />
                 <Image 
                     src="/images/motif2.svg" 
@@ -57,10 +61,11 @@ export default function Home() {
                     width={759}
                     height={463}
                     className="absolute bottom-0 left-0 hidden lg:block"
+                    priority
                 />
                 <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-4 px-4 py-6 container mx-auto z-10">
                     <div className="flex flex-col items-center lg:items-start justify-center gap-6">
-                        <h1 className="text-white min-h-[43px] text-center lg:text-left font-montserrat text-xl lg:text-4xl">{capitalyzeString("Nous sommes :")}<p className="hero-tittle font-montserrat font-bold text-xl lg:text-4xl break-words"></p></h1>
+                        <h1 className="text-white min-h-[43px] lg:min-h-[74px] text-center lg:text-left font-montserrat text-xl lg:text-4xl">{capitalyzeString("Nous sommes :")}<p className="hero-tittle font-montserrat font-bold text-xl lg:text-4xl break-words"></p></h1>
                         <div className="w-12 bg-bright-blue h-1"></div>
                         <p className="text-white text-center font-pt-serif italic text-base lg:text-xl">Agence web novatrice depuis 2008</p>
                         
@@ -73,12 +78,16 @@ export default function Home() {
                         width={500} 
                         height={530}
                         className="w-[200px] h-[212px] md:w-[350px] md:h-[371px] lg:w-[400px] lg:h-[424px] xl:w-[500px] xl:h-[530px]"
+                        priority
                     />
                 </div>
                 <div className="absolute bottom-2 left-[50%] w-0.5 bg-white h-8 transform -translate-y-1/2 z-10"></div>
             </section>
             {/* section de présentation */}
-            <section className=" bg-light-grey w-full lg:p-[90px]">
+            <section 
+                className="bg-light-grey w-full lg:p-[90px]"
+                aria-label="Section de présentation - Notre équipe et notre approche"
+            >
                 <div className="flex flex-col items-center justify-center gap-4 px-4 py-6 container mx-auto">
                     <H2Tittle title={capitalyzeString("Un équipage à votre service")} />
                     <H3Titlle title="Pour l&apos;ensemble de vos projets web " />
@@ -87,7 +96,10 @@ export default function Home() {
                 </div>
             </section>
             {/* section des services */}
-            <section className="bg-white w-full lg:p-[90px]">
+            <section 
+                className="bg-white w-full lg:p-[90px]"
+                aria-label="Section des services - Nos domaines d'expertise"
+            >
             <div className="flex flex-col items-center justify-center gap-4 px-4 py-6 container mx-auto">
                 <H2Tittle title={capitalyzeString("Expertise")} />
                 <H3Titlle title="entre design et développement" />
@@ -132,7 +144,10 @@ export default function Home() {
             </div>
             </section>
             {/* section des réalisations */}
-            <section className="bg-white w-full lg:p-[90px]">
+            <section 
+                className="bg-white w-full lg:p-[90px]"
+                aria-label="Section portfolio - Nos réalisations récentes"
+            >
                 <div className="flex flex-col items-center justify-center gap-4 px-4 py-6 container mx-auto">
                     <H2Tittle title={capitalyzeString("Nos dernières réalisations")} />
                     <H3Titlle title="Pour des clients qui nous font confiance" />
