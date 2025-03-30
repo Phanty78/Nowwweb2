@@ -17,7 +17,7 @@ export default function MobileNav() {
         <SheetTrigger asChild>
             <Menu size={48} className="text-black" />
         </SheetTrigger>
-        <SheetContent side="right" className="w-full bg-dark-blue text-white ">
+        <SheetContent side="right" className="w-full bg-dark-blue text-white font-montserrat text-xl flex flex-col gap-4 justify-center items-center">
           <DesktopNav />
         </SheetContent>
       </Sheet>

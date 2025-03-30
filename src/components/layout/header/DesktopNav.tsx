@@ -1,6 +1,7 @@
 import { routes } from "@constants/routes";
 import Link from "next/link";
 import Image from "next/image";
+import { capitalyzeString } from "@/utils/capitalyse";
 
 export default function DesktopNav() {
   return (
@@ -9,20 +10,20 @@ export default function DesktopNav() {
         <Image src="/images/logo.svg" alt="logo de l'agence Nowwweb" width={150} height={27} />
       </Link>
       <ul className="flex flex-col xl:flex-row  justify-between items-center gap-10 " aria-label="Liste des liens de navigation">
-        <li className="font-montserrat font-semibold text-lg  text-black/70 active:text-black hover:text-black" aria-label="Lien vers la page des expertises">
-          <Link href={routes.categories.consulting}>Expertises</Link>
+        <li className="font-montserrat lg:font-semibold text-xl lg:text-base text-white font-bold   lg:text-nav-grey lg:active:text-black lg:hover:text-black" aria-label="Lien vers la page des expertises">
+          <Link href={routes.categories.consulting}>{capitalyzeString("expertises")}</Link>
         </li>
-        <li className="font-montserrat font-semibold text-lg  text-black/70 active:text-black hover:text-black" aria-label="Lien vers la page des réalisations">
-          <Link href={routes.categories.portfolio}>Réalisations</Link>
+        <li className="font-montserrat lg:font-semibold text-xl lg:text-base text-white font-bold   lg:text-nav-grey lg:active:text-black lg:hover:text-black" aria-label="Lien vers la page des réalisations">
+          <Link href={routes.categories.portfolio}>{capitalyzeString("réalisations")}</Link>
         </li>
-        <li className="font-montserrat font-semibold text-lg  text-black/70 active:text-black hover:text-black" aria-label="Lien vers la page de l'agence">
-          <Link href={routes.categories.agency}>Agence</Link>
+        <li className="font-montserrat lg:font-semibold text-xl lg:text-base text-white font-bold   lg:text-nav-grey lg:active:text-black lg:hover:text-black" aria-label="Lien vers la page de l'agence">
+          <Link href={routes.categories.agency}>{capitalyzeString("agence")}</Link>
         </li>
-        <li className="font-montserrat font-semibold text-lg  text-black/70 active:text-black hover:text-black" aria-label="Lien vers la page des questions fréquentes">
-          <Link href={routes.categories.faq}>Questions</Link>
+        <li className="font-montserrat lg:font-semibold text-xl lg:text-base text-white font-bold   lg:text-nav-grey lg:active:text-black lg:hover:text-black" aria-label="Lien vers la page des questions fréquentes">
+          <Link href={routes.categories.faq}>{capitalyzeString("questions")}</Link>
         </li>
-        <li className="font-montserrat font-semibold text-lg text-black/70 active:text-black hover:text-black " aria-label="Lien vers la page de contact">
-          <Link href={routes.contact}>Contact</Link>
+        <li className="font-montserrat lg:font-semibold text-xl lg:text-base text-white font-bold   lg:text-nav-grey lg:active:text-black lg:hover:text-black " aria-label="Lien vers la page de contact">
+          <Link href={routes.contact}>{capitalyzeString("contact")}</Link>
         </li> 
       </ul>
     </nav>

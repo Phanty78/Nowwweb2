@@ -1,4 +1,6 @@
 import Image from "next/image";
+import ButtonLink from "@/components/ui/ButtonLink";
+import { capitalyzeString } from "@/utils/capitalyse"
 
 export default function BotBanner() {
   return (
@@ -29,9 +31,9 @@ export default function BotBanner() {
         loading="lazy"
       />
       <div className="flex flex-col gap-4 justify-center items-center z-10">
-        <h3 className="text-turquoise font-montserrat font-extrabold text-3xl text-center">UN PROJET ? UNE QUESTION ?</h3>
-        <h4 className="text-white font-pt-serif italic text-xl text-center">Plus rapide qu&apos;une bouteille à la mer</h4>
-        <a href="mailto:contact@nwb.fr" className="text-turquoise px-[29px] py-[14px] rounded-sm bg-dark-navy font-montserrat font-bold text-sm">CONTACTEZ-NOUS</a>
+        <h3 className="text-turquoise font-montserrat font-extrabold text-2xl lg:text-3xl text-center">UN PROJET ? UNE QUESTION ?</h3>
+        <h4 className="text-white font-pt-serif italic text-lg lg:text-2xl text-center">Plus rapide qu&apos;une bouteille à la mer</h4>
+        <ButtonLink title={capitalyzeString("contactez-nous")} href="mailto:contact@nwb.fr" />
       </div>
     </div>
   )

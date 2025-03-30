@@ -2,3 +2,4 @@ slider page article : pas de pagination / pas de boucle si dernière ou premièr
 amélioration html sémantique
 amélioration performance (lighthouse)
 suppresion des !important dans le code CSS > PLus maintenable
+ajout d'une 404 respectant la charte graphique du site web

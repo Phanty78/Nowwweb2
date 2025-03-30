@@ -59,10 +59,11 @@ export default function Home() {
                     className="absolute bottom-0 left-0 hidden lg:block"
                 />
                 <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-4 px-4 py-6 container mx-auto z-10">
-                    <div className="flex flex-col items-start justify-center gap-6">
-                        <h1 className="text-white font-montserrat text-4xl">Nous sommes : <p className="hero-tittle font-montserrat font-bold text-4xl "></p></h1>
-                        <p className="text-white text-center font-pt-serif italic text-base lg:text-xl">Agence web novatrice depuis 2008</p>
+                    <div className="flex flex-col items-center lg:items-start justify-center gap-6">
+                        <h1 className="text-white min-h-[43px] text-center lg:text-left font-montserrat text-xl lg:text-4xl">{capitalyzeString("Nous sommes :")}<p className="hero-tittle font-montserrat font-bold text-xl lg:text-4xl break-words"></p></h1>
                         <div className="w-12 bg-bright-blue h-1"></div>
+                        <p className="text-white text-center font-pt-serif italic text-base lg:text-xl">Agence web novatrice depuis 2008</p>
+                        
                         <ButtonLink title={capitalyzeString("Discutons de votre projet")} href={routes.contact} />
                     </div>
                     
