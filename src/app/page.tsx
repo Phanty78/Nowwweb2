@@ -56,6 +56,7 @@ export default function Home() {
           width={388}
           height={250}
           className="absolute top-0 right-0"
+          priority
         />
         <Image
           src="/images/motif2.svg"
