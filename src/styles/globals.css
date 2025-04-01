@@ -1,22 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
-
 @theme inline {
   --color-dark-blue: #051821;
-  --color-turquoise: #0CE3C6;
-  --color-dark-navy: #0A2A39;
-  --color-grey-blue: #5F6D74;
-  --color-bright-blue: #07A4E8;
+  --color-turquoise: #0ce3c6;
+  --color-dark-navy: #0a2a39;
+  --color-grey-blue: #5f6d74;
+  --color-bright-blue: #07a4e8;
   --color-light-grey: #f2f2f2;
-  --color-pastel-blue: #E6F6FD;
-  --color-pastel-green: #E6FCF9;
-  --color-light-pastel-blue: #EAF8FA;
-  --color-nav-grey: #5F6D74;
+  --color-pastel-blue: #e6f6fd;
+  --color-pastel-green: #e6fcf9;
+  --color-light-pastel-blue: #eaf8fa;
+  --color-nav-grey: #5f6d74;
   --font-pt-serif: 'PT Serif', serif;
   --font-montserrat: 'Montserrat', sans-serif;
   --color-background: var(--background);
